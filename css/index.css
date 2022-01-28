@@ -1,0 +1,119 @@
+/* Padrão */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GERAL */
+html,
+body,
+.flexContainer {
+  width: 100%;
+  height:  100%;
+}
+
+/* Plano de fundo do site */
+
+body {
+    background-image: url(../imagens/bg.gif);
+    background-size: cover;
+    /* backdrop-filter: blur(30px); COLOCAR ISSO AQUI NO JS DEPOIS COMO EFEITO*/
+}
+
+/* Ajustando posicionamento dos itens na tela */
+
+.flexContainer,
+.formContainer,
+.metodoContainer,
+.incrementoContainer,
+.enviarContainer,
+.resultadoMensagemContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estilizando o formulário */
+
+.formContainer {
+    border: 3px solid white;
+    height: 50%;
+    width: 20%;
+    border-radius: 10px;
+    /* background:whitesmoke; */
+}
+
+.tituloPrincipal {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Amatic SC";
+    color: deeppink;
+}
+
+.digiteAqui {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.metodoContainer {
+    margin: 10px;
+}
+
+.opcoes {
+    font-family: "Amatic SC";
+    font-size: 25px;
+    color: deeppink;
+}
+
+.incrementoContainer {
+    margin: 10px;
+    display: none;
+}
+
+.inputIncremento {
+    width: 50px;
+    text-align: center;
+}
+
+.codificarDecodificarText {
+    font-family: "Amatic SC";
+    color: deeppink;
+    font-size: 20px;
+}
+
+.codificarDecodificarContainer {
+    margin: 10px;
+}
+
+.enviarContainer {
+    margin: 30px;
+}
+
+.enviarBtn {
+    font-size: 20px;
+    font-family:calc();
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+    color: deeppink;
+    opacity: 80%;
+    transition: 1s;
+}
+
+.resultadoMensagem {
+    width: 300px;
+    height: 100px;
+}
+
+/* Animações */
+
+.enviarBtn:hover {
+    background-color: gold;
+    opacity: 100%;
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificar ou Decodificar</title>
+    <link rel="stylesheet" href="../Projeto Codificar ou Decodificar/css/index.css">
+    <link rel="stylesheet" href="../Projeto Codificar ou Decodificar/css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="flexContainer">
+    
+        <form class="formContainer" name="form">
+    
+        <legend class="tituloPrincipal">Codificar ou decodificar mensagem</legend>
+        
+        <div>
+        <input type="text" placeholder="Digite aqui" class="digiteAqui" >
+        </div>
+        
+        <div class="metodoContainer">
+        <label for="opcao" class="opcoes" >Escolha o método de criptografia:</label>
+        <select id="opcaoId" name="opcao">
+            <option value="semValor">---</option>
+            <option value="cifraDeCesar">Cifra de César</option>
+            <option value="base64">Base64</option>
+        </select>
+        </div>
+
+        <div class="incrementoContainer">
+        <p class="opcoes">Escolha o incremento da chave:</p>
+        <input type="number" default="0" min="1" class="inputIncremento">          
+        </div>
+        
+        <div class="codificarDecodificarContainer">
+        <input type="radio" name="selecao" value="codificar" class="codificarDecodificar">
+        <label for="codificar" class="codificarDecodificarText">Codificar</label>
+        <input type="radio" name="selecao" value="codificar" class="codificarDecodificar" >
+        <label for="decodificar" class="codificarDecodificarText">Decodificar</label>
+        </div>
+
+        <div class="enviarContainer">
+            <button type="submit" class="enviarBtn">CODIFICAR!</button>
+        </div>
+
+        <div class="resultadoMensagemContainer">
+            <textarea disabled placeholder="Sua mensagem secreta aparecerá aqui." class="resultadoMensagem" ></textarea>
+        </div>
+
+       
+    </form>
+    </div>
+    
+    <script src="../Projeto Codificar ou Decodificar/js/index.js"></script>
+</body>
+</html>
